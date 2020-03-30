@@ -102,7 +102,7 @@ class TCIAClient:
                     downloaded += len(chunk)
                     if not chunk: break
                     fp.write(chunk)
-            print("Successfully downloaded images for {}".format(zipFileName))
+            # print("Successfully downloaded images for {}".format(zipFileName))
         except urllib.request.HTTPError:
             e = sys.exc_info()[0]
             print("HTTP Error:",e.code , serviceUrl)
